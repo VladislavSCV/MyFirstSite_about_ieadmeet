@@ -186,8 +186,9 @@ background-size: cover;
   .StartPhoto{
 	  margin-left:1;  
   }
-  .StartPF{
-	  margin-left:1;
+ .StartPF{
+	  margin-left:100px;
+	  margin-top:0px;
 	  
   }
  
