@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Verification-iEADmeet</title>
+		<link rel="import" href="STR3.html">
+		<link rel="import" href="index.html">
+		<link rel="import" href="MAIN.html">
+		<link rel="import" href="STR2.html">
+		<link rel="import" href="Verrification.html">
+		<link rel="import" href="UserWin.html">
+		<link rel="import" href="MEME.html">
+		<link rel="stylesheet" href="CSS.css">
+    </head>
+	
+    <body>
+	<nav>
+<div class = "sidenav">		
+	<ul class="top-menu">
+	<header><a href = "MAIN.html" style="text-decoration: none; style="color: #rrggbb"><font color="red"><h1>iEADmeet2</h1></font></a>
+</header>
+		<li><a href="MAIN.html">HOME</a></li>
+		<li class="active">Hello, World!</li>
+		<li><a href="MEME.html">Мемчики про IT</a></li>
+		<li><a href="Catalog.html">Каталог направлений</a></li>
+		<li><p><a href = "#top">Связь с разработчиком</a></p></li>
+		<li><a href="Verrification.html">Войти</a></li>
+	</ul>
+</nav>
+		<section></section>
+	</div>
+	
+        <div class="container">
+		
+            <div class="steam-box">
+        <h2>Login</h2>
+        <form>
+            <div class="input-box">
+
+                <input type="text" id = "userName"  required="">
+                <label>Username</label>
+            </div>
+
+            <div class="input-box">
+			
+                <input type="password" name="password1" required="" id="password">
+                <label>Password</label>
+                <div id="toggle" onclick="userlogin()"></div>
+            </div>
+			
+            <input id = "outputInf" type="submit" value="Sign in" onclick="userlogin()">
+	
+			<input type="reset" value = "Clear all"></input>
+
+        </form>
+    </div>
+        </div>
+		
+		
+		
+		
+		
+		
+    </body>
+	<script>
+			function userlogin(){
+			userN = document.getElementById('userName');
+			userP = document.getElementById('password');
+			username = userN.value
+			userpassword = userP.value
+			if (username == "admin" && userpassword == "12345"){
+			window.open("https://vercel.com/vladislavscv/my-site/3Ne6rpysjhz8ho9d9Xvb8HVcrJSH");
+			}
+			else if (username == "user" && userpassword == "00000"){
+			window.open("UserWin.html");
+			}
+			else if (username == "" && userpassword == ""){
+				alert("Введите имя и пароль!")
+			}
+			else{
+			alert("Войдите в учетную запись, для удобства)")
+			window.open("Verrification.html");
+			}
+			
+			}
+			
+		</script>
+</html>
+
+
+
